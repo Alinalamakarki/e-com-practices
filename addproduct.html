@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/addproduct.css">
+</head>
+
+<body>
+
+    <img src="img/loader.gif" class="loader" alt="Loading........">
+
+    <div class="alert-box ">
+        <img src="img/error.png" alt="error" class="alert-img">
+        <p class="alert-msg">Error Message</p>
+    </div>
+
+    <img src="img/dark-logo.png" class="logo" alt="logo">
+
+    <div class="form">
+        <input type="text" id="product-name" placeholder="Product name">
+        <input type="text" id="short-des" placeholder="short line about product">
+        <textarea id="des" placeholder="detail about product / Description"></textarea
+    
+
+        <!-- product image -->
+        <div class="product-info">
+            <div class="product-image">
+                <p class="text">product image</p>
+            </div>
+            <div class="upload-image-sec">
+                <!-- upload inputs -->
+                <p class="text"><img src="img/camera.png" alt="upload photo">upload image</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="fileupload" id="first-file-uoload_btn" hidden>
+                    <label for="first-file-uoload_btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="second-file-uoload_btn" hidden>
+                    <label for="second-file-uoload_btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="third-file-uoload_btn" hidden>
+                    <label for="third-file-uoload_btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="fourth-file-uoload_btn" hidden>
+                    <label for="fourth-file-uoload_btn" class="upload-image"></label>
+                </div>
+            </div>
+            <div class="select-sizes">
+                <p class="text">size available</p>
+                <div class="sizes">
+                    <input type="checkbox" class="size-checkbox" id="XS" value="XS">
+                    <input type="checkbox" class="size-checkbox" id="S" value="S">
+                    <input type="checkbox" class="size-checkbox" id="M" value="M">
+                    <input type="checkbox" class="size-checkbox" id="L" value="L">
+                    <input type="checkbox" class="size-checkbox" id="XL" value="XL">
+                    <input type="checkbox" class="size-checkbox" id="XXL" value="XXL">
+                    <input type="checkbox" class="size-checkbox" id="XXXL" value="XXL">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-price">
+            <input type="number" id="actual-price" placeholder="Actual price">
+            <input type="number" id="discount" placeholder="Discount percentage %">
+            <input type="number" id="sell-price" placeholder="Sell price">
+        </div>
+        
+        <input type="number"  min="20" id="stock"  placeholder="items in stocks (minimum 20)">
+
+        <textarea id="tags" placeholder="Enter Categories hear, for example - Men, Jeans, Blue Jeans, Rough Jeans (you should Add men or women at start)"></textarea>
+
+        <input type="checkbox" id="tac" class="checkbox">
+        <label for="tac" >Clothing Can take 30% of My Total Sell</label>
+        
+        <div class="buttons">
+            <button class="btn" id="add-btn">add product</button>
+            <button class="btn" id="save-btn">Save Draft</button>
+        </div>
+    </div>
+
+
+    <script src="js/token.js"></script>
+    <script src="js/addproduct.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+body{
+    display: block;
+}
+.search-results{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding: 0 0vh;
+}
+.heading span{
+    font-weight: 700;
+}

@@ -1,0 +1,12 @@
+.four-o-four-image{
+    display: block;
+    margin: 60px auto;
+}
+.four-o-four-msg{
+    text-align: center;
+    text-transform: capitalize;
+    color: #383838;
+}
+.four-o-four-msg a{
+    color: #383838;
+}
